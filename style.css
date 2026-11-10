@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F0F5F4;
+    color: #142D4E;
+}
+
+.testimonials {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: #142D4E;
+}
+
+.heading p {
+    font-size: 16px;
+    color: #718580;
+    margin-bottom: 50px;
+}
+
+.review-container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    background: #FFFFFF;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(20, 45, 78, 0.08);
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(21, 154, 140, 0.13);
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.review-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #142D4E;
+}
+
+.review-card .role {
+    color: #718580;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.review-card .stars {
+    color: #F4B942;
+    font-size: 21px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.review-card .comment {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #586B68;
+}
+
+.navigation {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navigation button {
+    width: 45px;
+    height: 48px;
+    border: none;
+    border-radius: 9px;
+    background: #159A8C;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation button:hover {
+    background: #107568;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .review-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials {
+        padding: 50px 18px;
+    }
+
+    .heading h1 {
+        font-size: 27px;
+    }
+
+    .heading p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .review-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        min-height: 320px;
+    }
+}
